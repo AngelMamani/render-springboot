@@ -17,7 +17,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/personas")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://react-sprintboot-mysql.netlify.app")
 public class PersonaController {
   
     @Autowired
