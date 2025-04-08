@@ -16,7 +16,7 @@ import jakarta.persistence.Id;
 @Entity
 public class Persona {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) // ¡¡¡MODIFICADO A GenerationType.AUTO!!!
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
     private String apellido;
@@ -71,6 +71,6 @@ public class Persona {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
-
-
+    
+    
 }
